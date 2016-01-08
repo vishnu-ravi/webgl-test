@@ -1,0 +1,387 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"intersects"
+			],
+			[
+				"Vec",
+				"Vector2"
+			],
+			[
+				"un",
+				"unBindMouseEvents"
+			],
+			[
+				"hand",
+				"handlerMouseOut"
+			],
+			[
+				"had",
+				"handlerMouseMove"
+			],
+			[
+				"handl",
+				"handlerMouseUp"
+			],
+			[
+				"handlerMouse",
+				"handlerMouseOut"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"proje",
+				"Projector"
+			],
+			[
+				"dis",
+				"distanceTarget"
+			],
+			[
+				"tar",
+				"targetOnDown"
+			],
+			[
+				"z",
+				"zoomSpeed"
+			],
+			[
+				"mou",
+				"mouseOnDown"
+			],
+			[
+				"img",
+				"imgDir"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"scen",
+				"sceneAtmosphere"
+			],
+			[
+				"Th",
+				"THREE"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"POS",
+				"POS_Z"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "assets/js/app/index.js",
+			"settings":
+			{
+				"buffer_size": 17709,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/krds-vishnu/Documents/git/webgl-experiment",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/data",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/js/app",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/js/lib",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/d3test",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/new_test",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/new_test/vendor"
+	],
+	"file_history":
+	[
+		"/home/krds-vishnu/Documents/git/webgl-experiment/new_test/map.js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/d3test/map.js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/d3test/index.js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/d3test/index.html",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/js/lib/three.js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/js/lib/black_globe.js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/js/lib/pnltri.min.js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/new_test/index.html",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/js/lib/world.js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/js/lib/bare_globe.js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/js/lib/white_globe.js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/vendor/worldMap-master/index.html",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/index.html",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/js/app/index.js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/assets/js/lib/ThreeExtras.js",
+		"/home/krds-vishnu/Documents/plugins/mrdoob-three.js-1f968fe/build/three.js",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/vendor/worldMap-master/js/map.js",
+		"/home/krds-vishnu/Documents/plugins/76fb72646a68202e6bde-8f954b3ca01835bee4af9ae50dfe73eb6ab88fca/continents.json",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/.gitignore",
+		"/home/krds-vishnu/Documents/git/webgl-experiment/README.sublime-project",
+		"/home/krds-vishnu/Documents/test.js",
+		"/home/krds-vishnu/Documents/catalogue.xml",
+		"/home/krds-vishnu/Documents/sephora it/sx_products_pl.sql",
+		"/home/krds-vishnu/Downloads/sx_products_it.sql",
+		"/home/krds-vishnu/Downloads/sx_products_pl.sql",
+		"/home/krds-vishnu/Documents/sephora it/sx_products_it.sql",
+		"/home/krds-vishnu/Documents/sephora it/sx_products.sql",
+		"/home/krds-vishnu/sx_products.sql",
+		"/home/krds-vishnu/catalogue.xml.1",
+		"/home/krds-vishnu/catalogue.xml",
+		"/home/krds-vishnu/Downloads/sx_products.sql",
+		"/home/krds-vishnu/Documents/www/projects/clients/oman-travelris/trunk/resources/native/travelleroasis/www/js/lib/localstorage.js",
+		"/home/krds-vishnu/Documents/xml/catalogue.xml",
+		"/var/www/html/xmlDemo/sephora.xml"
+	],
+	"find":
+	{
+		"height": 50.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"});\n",
+			"animate",
+			"projector",
+			"init_tree",
+			"add_plain",
+			"add_light",
+			"geo.Path",
+			"geo",
+			"createPoints",
+			"color",
+			"colorFn",
+			"loadTriMesh",
+			"vec3",
+			"continents",
+			"Shaders",
+			"sphere",
+			"transformSVGPath",
+			"Mesh =",
+			"		\n",
+			"triangulateShape",
+			"triangulate",
+			"projector",
+			"mouse",
+			"loadTriMesh",
+			"createPoints",
+			"camera",
+			"Vertex",
+			"addObject",
+			"createPoints",
+			"Path =",
+			"Shape = ",
+			"shape()",
+			"shape",
+			"init_d3",
+			"add_countries",
+			"addData",
+			"addEvent",
+			"removeEventListener",
+			"onMouseUp",
+			"onMouseUP",
+			"onMouseUp",
+			"imgDir",
+			"render",
+			"rendere",
+			"GeometryUtils",
+			"addData",
+			"Globe",
+			"lastClick",
+			"clickEnabled",
+			"animate",
+			"addData",
+			"createPoints",
+			"coastLine",
+			"projector",
+			"add_plain",
+			"getCountryColor",
+			"init",
+			"onMouseDown",
+			"animate",
+			"getWorld",
+			"imgDir",
+			">\n",
+			"sx_products"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sx_products_tmp"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "assets/js/app/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5352,
+								5352
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 8415.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "webgl.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

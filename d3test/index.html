@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>D3Test</title>
+</head>
+<body>
+<div id="worldmap"></div>
+<script src="/assets/js/lib/jquery-1.11.3.min.js"></script>
+<script src="/assets/js/lib/pnltri.min.js"></script>
+<script src="/assets/js/lib/three.min.js"></script>
+<script src="/assets/js/lib/d3.min.js"></script>
+<script src="/assets/js/lib/d3-threeD.js"></script>
+<script>
+	
+
+    $(document).ready(function()
+	{
+		$.when(	$.getJSON("/assets/data/continents.json") ).then(function(data)
+		{ 	
+			var WIDTH       = window.innerWidth; 
+			var HEIGHT      = window.innerHeight;  
+			
+			var VIEW_ANGLE  = 45;
+			var NEAR        = 0.1; 
+			var FAR         = 10000;
+			var CAMERA_X    = 0;
+			var CAMERA_Y    = 1000;
+			var CAMERA_Z    = 500;
+			var CAMERA_LX   = 0;
+			var CAMERA_LY   = 0;
+			var CAMERA_LZ   = 0;
+
+			var geo;
+
+			var geoConfig = function() {
+				this.projection = d3.geo.orthographic();
+				this.path = d3.geo.path().projection(this.projection);
+			}
+	
+			geo = new geoConfig();
+
+			var renderer = new THREE.WebGLRenderer({
+					antialias : true
+				});
+				
+
+			renderer.setSize(WIDTH, HEIGHT);
+			renderer.setClearColor( 0xBBBBBB, 1 );
+			// append renderer to dom element
+			$("#worldmap").append(renderer.domElement);
+			
+			// create a scene
+			var scene = new THREE.Scene();
+			
+			// put a camera in the scene
+			var camera = new THREE.PerspectiveCamera(VIEW_ANGLE, WIDTH / HEIGHT, NEAR, FAR);
+			camera.position.x = CAMERA_X;
+			camera.position.y = CAMERA_Y;
+			camera.position.z = CAMERA_Z;
+			camera.lookAt( { x: CAMERA_LX, y: 0, z: CAMERA_LZ} );
+			scene.add(camera);
+
+			add_light(0, 3000, 0, 1.0, 0xFFFFFF);	
+
+			/*var planeGeo = new THREE.CubeGeometry(1400, 700, 30);
+			var planeMat = new THREE.MeshLambertMaterial({color: 0xEEEEEE});
+			var plane = new THREE.Mesh(planeGeo, planeMat);
+			
+			// rotate it to correct position
+			plane.rotation.x = -Math.PI/2;
+			scene.add(plane);*/
+
+			var continents = [];
+			var width = 960, height = 600;
+			
+
+		    for (var i = 0 ; i < data.features.length ; i++) {
+				var geoFeature = data.features[i];
+				var properties = geoFeature.properties;
+				var feature = geo.path(geoFeature);
+				
+				// we only need to convert it to a three.js path
+				var mesh = transformSVGPathExposed(feature);
+				
+				// add to array
+				for (var j = 0 ; j < mesh.length ; j++) {
+					  continents.push({"data": properties, "mesh": mesh[j]});
+				}
+			}
+
+	    	
+		    console.log(continents);
+
+		   for (var i = 0 ; i < continents.length ; i++) {
+					var color = '#C0C0C0';
+					switch(continents[i].data.CONTINENT)
+					{
+						case 'Asia':
+							color = 0x800000;
+						break;
+
+						case 'Europe':
+							color = 0x0000FF;
+						break;
+
+						case 'Africa':
+							color	=	0xFFFF00;
+						break;
+
+						case 'North America':
+							color	=	0x00FF00;
+						break;
+
+						case 'South America':
+							color	=	0x800080;
+						break;
+					}
+					// create material color based on average		
+					var material = new THREE.MeshPhongMaterial({
+						color: color, 
+						opacity:0.5
+					}); 
+							
+					// extrude mesh
+					var shape3d = continents[i].mesh.extrude({
+						amount: 1, 
+						bevelEnabled: false
+					});
+
+					// create a mesh based on material and extruded shape
+					var toAdd = new THREE.Mesh(shape3d, material);
+					
+					//set name of mesh
+					toAdd.name = continents[i].data.CONTINENT;
+					
+					// rotate and position the elements
+					toAdd.rotation.x = Math.PI/2;
+					toAdd.translateX(-490);
+					toAdd.translateZ(50);
+					toAdd.translateY(20);
+					// add to scene
+					scene.add(toAdd);
+				}
+
+				var onFrame = window.requestAnimationFrame;
+	
+				function tick(timestamp) {
+					animate();
+					onFrame(tick);
+				}
+	
+				onFrame(tick);
+
+				function add_light(x, y, z, intensity, color)
+				{
+					var pointLight = new THREE.PointLight(color);
+					pointLight.position.x = x;
+					pointLight.position.y = y;
+					pointLight.position.z = z;
+					pointLight.intensity = intensity;
+					scene.add(pointLight);
+				}
+		    	
+		    	function animate()
+		    	{
+		    		renderer.render(scene, camera);
+		    	}
+		});
+	});
+</script>
+</body>
+</html>
